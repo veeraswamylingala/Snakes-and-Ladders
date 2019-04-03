@@ -11,19 +11,34 @@ public class SnakeLadders{
 		return value1; 
 	}
 	public static boolean snake(int i,int j) {
-		//snake is in 4th place thats the co-ordinate [1,2] i.e, i=1 & j=2
-		//write your code here
-		return false;
+	 if(i==1 && j==2)
+	 {
+		 return true;
+	 }
+	return false;
+			
 	}
 	public static boolean ladder(int i,int j) {
+		 if(i==0 && j==2)
+		 {
+			 return true;
+		 }
 		//ladder is in 3rd place thats the co-ordinate [0,3] i.e, i=0 and j=2
 		//write your code here
 		return false;
 	}
 	public static boolean gameOver(int score) {
+		
+		if(score>9)
+		{
+		return true;
+		}
 		//if the score is greater than 9 you win. 
-		//write your code here
 		return false;
+
+		//write your code here
+		
+
 	}
 	public static void main(String args[]) {
 		board = new int[3][3];
